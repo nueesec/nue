@@ -5,9 +5,7 @@ do
         echo 'WELCOME TO PANEL NUEE NETWORK'
         echo '[1] Jalankan localhost '
         echo '[2] Jalankan Bot Telegram '
-        echo '[3] Creat Voucher '
-        echo '[4] Lihat Daftar User '
-        echo '[5] Lihat User Aktif '
+        echo '[0] Exit '
         echo -n 'Get: '
         read get;
     if [ $get = '1' ] || [ $get = '01' ];
@@ -25,30 +23,10 @@ do
         cd Saldo
         clear
         php Core_Saldo_Nonsaldo.php
-    elif [ $get = '3' ] || [ $get = '03' ];
+    elif [ $get = '0' ] || [ $get = '00' ];
     then
-        cd storage
-        cd shared
-        cd cli
-        cd hotspot
-        clear
-        php add_profile.php
-    elif [ $get = '4' ] || [ $get = '04' ];
-    then
-        cd storage
-        cd shared
-        cd cli
-        cd hotspot
-        clear
-        php user.php
-    elif [ $get = '5' ] || [ $get = '05' ];
-    then
-        cd storage
-        cd shared
-        cd cli
-        cd hotspot
-        clear
-        php user_active.php
+       echo 'bye bye.....'
+       exit
     else
         echo 'ERROR: Wrong input..!'
         slep 1
