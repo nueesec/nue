@@ -1,6 +1,6 @@
 #!/bin/sh
 ulang='y'
-while [ $ulang = 'y'];
+while [ $ulang = 'y' ];
 do
     echo 'WELCOME TO PANEL NUEE NETWORK'
     echo '[1] Jalankan localhost '
